@@ -1,0 +1,47 @@
+{
+  "author": "mdobrev",
+  "types": [
+
+  ],
+  "name": "mdobrev-tomcat6",
+  "version": "0.4.1",
+  "dependencies": [
+    {
+      "version_requirement": ">= 2.6.0",
+      "name": "puppetlabs/stdlib"
+    }
+  ],
+  "project_page": "https://github.com/mclueppers/puppet-tomcat6",
+  "license": "Affero GPL",
+  "description": "A tomcat6 module that supports multiple instances",
+  "summary": "A tomcat6 module that supports multiple instances",
+  "checksums": {
+    "manifests/package.pp": "c948e5acfda3574716fdd2def3195d72",
+    "README.markdown": "19543c26994ddde98acc5c14f8eca396",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "files/app-home/logging.properties": "ea37fdce9178e9d93334d3a116cfb8ea",
+    "files/app-home/global-tomcat6.conf": "f7e879f664c8410778d028eb440e6517",
+    "templates/server-xml-engine.erb": "b50b9fcd16cd2296497f908bfe844690",
+    "templates/server-xml-footer.erb": "bf9099f06b3b76735904c7683a455a5b",
+    "manifests/resource.pp": "c665c58453080a5f9662efefb011dcf4",
+    "files/app-home/server.xml": "6b4c60bdbe3989b9d25b3cef967ef904",
+    "files/app-home/context.xml": "0fe95a15b3f4531be3db19260bfa148d",
+    "Modulefile": "c9a06acc309dc58a6e1a72abad55053e",
+    "files/app-home/tomcat-users.xml": "bdc2c76dafea33baf21cc1636b051c40",
+    "files/app-home/tomcat6.conf": "902beff3b4099c4ecc1e92e393cc8435",
+    "CHANGELOG": "5889c36b42a0f9fb9466385ae59207c4",
+    "files/app-home/standard-tomcat6.conf": "7edca467666b91578f24ef4bb0d633fe",
+    "files/app-home/catalina.properties": "36bb9d2a3155f63e4bcff41695638b68",
+    "files/app-home/standard-server.xml": "1ba65c750ec902e2dd5512655072d26e",
+    "templates/sysconfig.erb": "cc0a940507c739f09dcd985372b91687",
+    "templates/server-xml.erb": "425a1b6715c8235a5d257efb705e1bc5",
+    "templates/server-xml-header.erb": "52881d43076300a9bf95fa789e50a056",
+    "manifests/instance.pp": "2fe39c3b51530572610efca014d83618",
+    "manifests/init.pp": "f27188f68371cad3262038e79ffaf9d1",
+    "files/app-home/web.xml": "6ca77965493c9f15af0e10d92eaa84ad",
+    "files/app-home/log4j.properties": "f75a1d7eb612160c99729dc06edb76de",
+    "files/app-home/catalina.policy": "02af9dd89d9811018961273114852ad0",
+    "files/app-home/system-tomcat6.conf": "6ba6e5f48283a456de81d176ca0e7cfc"
+  },
+  "source": "https://github.com/mclueppers/puppet-tomcat6"
+}
