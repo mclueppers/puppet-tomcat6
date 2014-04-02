@@ -1,0 +1,50 @@
+{
+  "source": "https://github.com/mclueppers/puppet-tomcat6",
+  "version": "0.4.3",
+  "dependencies": [
+    {
+      "version_requirement": ">= 2.6.0",
+      "name": "puppetlabs/stdlib"
+    },
+    {
+      "name": "puppetlabs/concat"
+    }
+  ],
+  "description": "A tomcat6 module that supports multiple instances",
+  "name": "mdobrev-tomcat6",
+  "project_page": "https://github.com/mclueppers/puppet-tomcat6",
+  "license": "Affero GPL",
+  "summary": "A tomcat6 module that supports multiple instances",
+  "author": "mdobrev",
+  "checksums": {
+    "templates/server-xml-engine.erb": "b50b9fcd16cd2296497f908bfe844690",
+    "files/app-home/server.xml": "6b4c60bdbe3989b9d25b3cef967ef904",
+    "files/app-home/global-tomcat6.conf": "f7e879f664c8410778d028eb440e6517",
+    "manifests/resource.pp": "c665c58453080a5f9662efefb011dcf4",
+    "files/app-home/tomcat-users.xml": "bdc2c76dafea33baf21cc1636b051c40",
+    "templates/server-xml-footer.erb": "bf9099f06b3b76735904c7683a455a5b",
+    "files/app-home/catalina.properties": "36bb9d2a3155f63e4bcff41695638b68",
+    "templates/server-xml.erb": "425a1b6715c8235a5d257efb705e1bc5",
+    "manifests/package.pp": "c948e5acfda3574716fdd2def3195d72",
+    "CHANGELOG": "0ccd1bb6ce356f3a48ad8fde3782e799",
+    "README.markdown": "012be5a5de68d721041a0ee11c3fbaa4",
+    "files/app-home/standard-server.xml": "1ba65c750ec902e2dd5512655072d26e",
+    "files/app-home/context.xml": "0fe95a15b3f4531be3db19260bfa148d",
+    "templates/server-xml-header.erb": "52881d43076300a9bf95fa789e50a056",
+    "manifests/instance.pp": "2fe39c3b51530572610efca014d83618",
+    "files/app-home/catalina.policy": "02af9dd89d9811018961273114852ad0",
+    "files/app-home/log4j.properties": "f75a1d7eb612160c99729dc06edb76de",
+    "files/app-home/tomcat6.conf": "902beff3b4099c4ecc1e92e393cc8435",
+    "Modulefile": "2e26d68afc176c859313889627519c0b",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "files/app-home/standard-tomcat6.conf": "7edca467666b91578f24ef4bb0d633fe",
+    "files/app-home/web.xml": "6ca77965493c9f15af0e10d92eaa84ad",
+    "files/app-home/logging.properties": "ea37fdce9178e9d93334d3a116cfb8ea",
+    "templates/sysconfig.erb": "cc0a940507c739f09dcd985372b91687",
+    "manifests/init.pp": "f27188f68371cad3262038e79ffaf9d1",
+    "files/app-home/system-tomcat6.conf": "6ba6e5f48283a456de81d176ca0e7cfc"
+  },
+  "types": [
+
+  ]
+}

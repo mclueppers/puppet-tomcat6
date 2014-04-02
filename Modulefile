@@ -1,0 +1,11 @@
+name    'mdobrev-tomcat6'
+version '0.4.3'
+source 'https://github.com/mclueppers/puppet-tomcat6'
+author 'mdobrev'
+license 'Affero GPL'
+summary 'A tomcat6 module that supports multiple instances'
+description 'A tomcat6 module that supports multiple instances'
+project_page 'https://github.com/mclueppers/puppet-tomcat6'
+
+dependency 'puppetlabs/stdlib', '>= 2.6.0'
+dependency 'puppetlabs/concat'
