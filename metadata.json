@@ -1,0 +1,43 @@
+{
+  "summary": "a tomcat6 module that supports multiple instances",
+  "types": [
+
+  ],
+  "author": "arusso",
+  "project_page": "https://github.com/arusso23/puppet-tomcat6",
+  "checksums": {
+    "Modulefile": "50f46b11bf4b344964857fb36853064b",
+    "files/app-home/tomcat-users.xml": "bdc2c76dafea33baf21cc1636b051c40",
+    "README.markdown": "b7649eefa920ba7d8272b58107d1757c",
+    "manifests/package.pp": "c948e5acfda3574716fdd2def3195d72",
+    "files/app-home/web.xml": "6ca77965493c9f15af0e10d92eaa84ad",
+    "files/app-home/logging.properties": "ea37fdce9178e9d93334d3a116cfb8ea",
+    "files/app-home/global-tomcat6.conf": "f7e879f664c8410778d028eb440e6517",
+    "files/app-home/server.xml": "6b4c60bdbe3989b9d25b3cef967ef904",
+    "templates/sysconfig.erb": "b6e9eac9d608f7ec5eab55e79ac34312",
+    "files/app-home/standard-server.xml": "1ba65c750ec902e2dd5512655072d26e",
+    "CHANGELOG": "5889c36b42a0f9fb9466385ae59207c4",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "files/app-home/context.xml": "0fe95a15b3f4531be3db19260bfa148d",
+    "templates/server-xml.erb": "425a1b6715c8235a5d257efb705e1bc5",
+    "manifests/instance.pp": "0c0b1e5e994c70b344d023c5f09b241b",
+    "manifests/init.pp": "f27188f68371cad3262038e79ffaf9d1",
+    "files/app-home/system-tomcat6.conf": "6ba6e5f48283a456de81d176ca0e7cfc",
+    "files/app-home/log4j.properties": "f75a1d7eb612160c99729dc06edb76de",
+    "files/app-home/tomcat6.conf": "902beff3b4099c4ecc1e92e393cc8435",
+    "files/app-home/standard-tomcat6.conf": "7edca467666b91578f24ef4bb0d633fe",
+    "files/app-home/catalina.properties": "36bb9d2a3155f63e4bcff41695638b68",
+    "files/app-home/catalina.policy": "02af9dd89d9811018961273114852ad0"
+  },
+  "source": "https://github.com/arusso23/puppet-tomcat6",
+  "dependencies": [
+    {
+      "version_requirement": ">= 2.6.0",
+      "name": "puppetlabs/stdlib"
+    }
+  ],
+  "license": "none",
+  "name": "arusso-tomcat6",
+  "version": "0.0.2",
+  "description": "a tomcat6 module that supports multiple instances"
+}
