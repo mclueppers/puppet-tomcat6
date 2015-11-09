@@ -45,26 +45,26 @@ define tomcat6::instance (
                   "/var/cache/tomcat6-${name}/temp",
                   "/var/cache/tomcat6-${name}/work" ]
   file { $cache_dirs:
-    ensure  => directory,
-    owner   => $account,
-    group   => $account,
-    mode    => '2775',
+    ensure => directory,
+    owner  => $account,
+    group  => $account,
+    mode   => '2775',
   }
 
   file { "${base_dir}/${account}/tomcat6-${name}/temp":
-    ensure  => link,
-    owner   => $account,
-    group   => $log_group_r,
-    mode    => '2775',
-    target  => "/var/cache/tomcat6-${name}/temp"
+    ensure => link,
+    owner  => $account,
+    group  => $log_group_r,
+    mode   => '2775',
+    target => "/var/cache/tomcat6-${name}/temp"
   }
 
   file { "${base_dir}/${account}/tomcat6-${name}/work":
-    ensure  => link,
-    owner   => $account,
-    group   => $log_group_r,
-    mode    => '2775',
-    target  => "/var/cache/tomcat6-${name}/work"
+    ensure => link,
+    owner  => $account,
+    group  => $log_group_r,
+    mode   => '2775',
+    target => "/var/cache/tomcat6-${name}/work"
   }
 
   #######
@@ -93,11 +93,11 @@ define tomcat6::instance (
   }
 
   file { "${base_dir}/${account}/tomcat6-${name}/logs":
-    ensure  => link,
-    owner   => $account,
-    group   => $log_group_r,
-    mode    => '2775',
-    target  => "/var/log/tomcat6-${name}",
+    ensure => link,
+    owner  => $account,
+    group  => $log_group_r,
+    mode   => '2775',
+    target => "/var/log/tomcat6-${name}",
   }
 
   file { "${base_dir}/${account}/tomcat6-${name}/bin":
@@ -116,19 +116,19 @@ define tomcat6::instance (
   # Cluster configuration
   #######
   if is_hash($tomcat_cluster) {
-	if is_hash($tomcat_cluster['deployer']) {
-		$deployer = $tomcat_cluster['deployer']
-	}
+  if is_hash($tomcat_cluster['deployer']) {
+    $deployer = $tomcat_cluster['deployer']
+  }
         if is_hash($tomcat_cluster['receiver']) {
-		$receiver = $tomcat_cluster['receiver']
+    $receiver = $tomcat_cluster['receiver']
         }
         if is_hash($tomcat_cluster['membership']) {
-		$membership = $tomcat_cluster['membership']
+    $membership = $tomcat_cluster['membership']
         }
-	$jvmroute = $::hostname
+  $jvmroute = $::hostname
   }
 
-  $defaulthost = "localhost"
+  $defaulthost = 'localhost'
 
   $tomcat_engine = template('tomcat6/server-xml-engine.erb')
 
@@ -143,21 +143,21 @@ define tomcat6::instance (
   }
 
   concat { "${base_dir}/${account}/tomcat6-${name}/conf/server.xml":
-      owner  => $account,
-      group  => $home_group_r,
-      mode   => '0664',
+    owner => $account,
+    group => $home_group_r,
+    mode  => '0664',
   }
 
   concat::fragment { "server.xml.header-${name}":
-      content => template('tomcat6/server-xml-header.erb'),
-      target  => "${base_dir}/${account}/tomcat6-${name}/conf/server.xml",
-      order   => 01,
+    content => template('tomcat6/server-xml-header.erb'),
+    target  => "${base_dir}/${account}/tomcat6-${name}/conf/server.xml",
+    order   => 01,
   }
 
   concat::fragment { "server.xml.footer-${name}":
-      content => template('tomcat6/server-xml-footer.erb'),
-      target  => "${base_dir}/${account}/tomcat6-${name}/conf/server.xml",
-      order   => 99,
+    content => template('tomcat6/server-xml-footer.erb'),
+    target  => "${base_dir}/${account}/tomcat6-${name}/conf/server.xml",
+    order   => 99,
   }
 
   #file { "/${base_dir}/${account}/tomcat6-${name}/conf/server.xml":
